@@ -1,0 +1,322 @@
+@font-face {
+    font-family: AGOpus; /* Имя шрифта */
+    src: url(../fonts/agopusr.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+    font-family: AGOpus, serif;
+    background-color: #FCF8E9;
+    height: 100%;
+    max-height: 100%;
+}
+
+.red {
+    color: #E31E24;
+    font-weight: bold;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.logo_contacts {
+    padding-top: 24px;
+}
+.logo_contacts, .container {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 50%;
+}
+
+.contacts {
+    float: right;
+    text-align: right;
+}
+
+.eshop {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #70440F;
+}
+
+.call-img {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.call-img img{
+    width: 24px;
+    vertical-align: middle;
+}
+
+.call {
+    padding-left: 6px;
+}
+
+
+.call, .number_phones, .phone {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.call, .number_phones {
+    text-decoration: underline;
+}
+
+.number_phones {
+    color: #0C54A0;
+}
+
+.phones {
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.nav {
+    background-color: #4EC9F1;
+    clear: both;
+    margin-top: 12px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav li {
+    display: inline-block;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 24%;
+}
+
+.nav a {
+    color: #FEFEFE;
+}
+
+.offer_image1, .offer_image2 {
+    position: relative;
+    width: 100%;
+}
+
+.offer_text1 {
+    position: absolute;
+    top: 30px;
+    left: 210px;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.offer_text2 {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.offer_text2 ul{
+    font-size: 0.9rem;
+}
+
+.offer_text2 li {
+    margin-top: 0.5rem;
+}
+
+.offer3 {
+    background-color: #2F2621;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    font-size: 2rem;
+}
+
+.offer3 span {
+    font-size: 1.4rem;
+}
+
+.advantages {
+    background-color: #8CAA33;
+    color: #fefefe;
+}
+
+.advantages-header, .benefits-header {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.advantages-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+
+.round-image {
+    display: inline-block;
+    font-size: 0.4rem;
+    text-align: center;
+    width: 19.5%;
+}
+
+.round-image img {
+    border-radius: 100px;
+    width: 50%;
+    box-shadow: -3px -3px 10px rgba(0,0,0,0.5);
+}
+
+.round-image p {
+    margin-top: 12px;
+}
+
+.bottom-advantages {
+    background: #2F2621 url("../img/background-lime.png") repeat-x;
+    height: 5px;
+}
+
+.benefits {
+    background-color: #2F2621;
+    color: #fefefe;
+}
+
+.benefits-content {
+    padding:  1rem 4rem 2rem 4rem;
+    text-align: center;
+}
+
+.symbol-image {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.6rem;
+    width: 20%;
+}
+
+.symbol-image img {
+    width: 35%;
+}
+
+.symbol-image p {
+    color: #A2D9F7;
+    margin-top: 6px;
+}
+
+.subscription {
+    background-color: #9CDDFB;
+    padding: 20px 70px;
+    height: 90px;
+    position: relative;
+}
+
+.subscription-header {
+    color: #2B2A29;
+    display: inline-block;
+    width: 200px;
+}
+
+.subscription-form {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+}
+
+.subscription-email {
+    background: white url('../img/letter.png') 10px 5px no-repeat;
+    height: 30px;
+    padding-left: 50px;
+    font-style: italic;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    width: 250px;
+}
+
+.subscription-button {
+    background-color: #FCF8E9;
+    border-radius: 20px;
+    box-shadow: -3px -1px rgba(0,0,0,0.5);
+    height: 30px;
+    margin-left: 8px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.warning {
+    border: 1px dashed #E31E24;
+    padding: 10px;
+    margin: 20px 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.warning div {
+    margin-top: 12px;
+}
+
+.footer {
+    background-color: #4EC9F1;
+    font-size: 0.8rem;
+    text-align: center;
+    height: 170px;
+    vertical-align: middle;
+}
+
+.footer:before {
+    display: inline-block;
+    height: 170px;
+
+    vertical-align: middle;
+    content: "";
+}
+
+.symbol-footer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.symbol-footer {
+    width: 20%;
+}
+
+.symbol-footer img {
+    width: 25%;
+}
+
+.symbol-footer p {
+    padding: 6px;
+}
+
+.arrow {
+    display: inline-block;;
+}
+
+.arrow img {
+    width: 70%;
+}
