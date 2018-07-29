@@ -18,3 +18,5 @@
 $app->get('/', function () use ($app) {
     return view('landing-page');
 });
+
+$router->get('call', 'LandingController@call');
