@@ -1,0 +1,1 @@
+{% raw %}<strong>Ваш заказ звонка принят</strong>!{% endraw %}
