@@ -11,12 +11,6 @@
 |
 */
 
-//$app->get('/', function () use ($app) {
-//    return $app->version();
-//});
+$app->get('/', 'LandingController@index');
 
-$app->get('/', function () use ($app) {
-    return view('landing-page');
-});
-
-$router->get('call', 'LandingController@call');
+$app->get('call', 'LandingController@call');
