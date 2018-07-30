@@ -76,20 +76,6 @@
                         </ul>
                     </span>
             </div>
-
-            <!--<div id="form" class="float-right">
-                ОСТАВЬТЕ ЗАЯВКУ
-                и получите бесплатную
-                консультацию
-
-                Введите ваше имя
-
-                Ваш телефон
-
-                Ваш e-mail
-
-                Оставить заявку
-            </div>-->
         </section>
         <section class="advantages">
             <h3 class="advantages-header">
@@ -252,5 +238,21 @@
         </div>
     </footer>
 </div>
+
+<div id="call-form" class="float-right">
+    ОСТАВЬТЕ ЗАЯВКУ
+    и получите бесплатную
+    консультацию
+    <form class="" role="form" method="post" action="/call">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+        <input class="subscription-email" type="email" placeholder="Введите ваше имя">
+        <input class="subscription-email" type="email" placeholder="Ваш телефон">
+        <input class="subscription-email" type="email" placeholder="Ваш e-mail">
+
+        <button type="submit">Оставить заявку</button>
+    </form>
+</div>
+
 </body>
 </html>
