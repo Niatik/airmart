@@ -7,6 +7,7 @@ html, body {
     height: 100%;
 }
 body {
+    position: relative;
     font-family: AGOpus, serif;
     background-color: #FCF8E9;
     position: relative;
@@ -336,3 +337,45 @@ footer:before {
 .arrow img {
     width: 70%;
 }
+
+.call-form {
+    position: fixed;
+    top: 40%;
+    left: 80%;
+    background-color: #9CDDFB;
+    color: #2B2A29;
+    text-align: center;
+    box-shadow: -10px -5px 20px rgba(0,0,0,0.5);
+}
+
+.call-form-header {
+    margin-top: 20px;
+}
+.call-form-text {
+    margin-bottom: 10px;
+}
+
+.call-form-name, .call-form-phone, .call-form-email {
+    background: white url('../img/letter.png') 10px 8px no-repeat;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 15px;
+    padding-left: 50px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    width: 200px;
+}
+
+.call-form-button {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #E31E24;
+    font-size: 0.9rem;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: -5px -3px 5px rgba(0,0,0,0.5);
+    background-color:#fefefe ;
+    background: linear-gradient(to top, #9CDDFB, #fefefe);
+}
+

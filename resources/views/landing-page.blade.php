@@ -239,18 +239,15 @@
     </footer>
 </div>
 
-<div id="call-form" class="float-right">
-    ОСТАВЬТЕ ЗАЯВКУ
-    и получите бесплатную
-    консультацию
-    <form class="" role="form" method="post" action="/call">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-        <input class="subscription-email" type="email" placeholder="Введите ваше имя">
-        <input class="subscription-email" type="email" placeholder="Ваш телефон">
-        <input class="subscription-email" type="email" placeholder="Ваш e-mail">
-
-        <button type="submit">Оставить заявку</button>
+<div class="call-form">
+    <h4 class="call-form-header">ОСТАВЬТЕ ЗАЯВКУ</h4>
+    <div class="call-form-text">и получите бесплатную<br />консультацию</div>
+    <form role="form" method="post" action="call">
+        <input type="hidden" name="_token" value="{{ app('session')->token() }}">
+        <input name="call-name" class="call-form-name" type="text" placeholder="Введите ваше имя">
+        <input name="call-phone" class="call-form-phone" type="text" placeholder="Ваш телефон">
+        <input name="call-email" class="call-form-email" type="email" placeholder="Ваш e-mail">
+        <button class="call-form-button" type="submit">Оставить заявку</button>
     </form>
 </div>
 
