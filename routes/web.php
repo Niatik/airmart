@@ -13,4 +13,4 @@
 
 $app->get('/', 'LandingController@index');
 
-$app->get('call', 'LandingController@call');
+$app->post('call', 'LandingController@call');
