@@ -8,13 +8,35 @@ use App\Mail\CallOrder as CallOrder;
 
 class LandingController extends Controller
 {
-    public function call()
+    /**
+     * Sent emails.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function call(Request $request)
     {
+        $name = $request->input('call-name');
+        $phone= $request->input('call-phone');
+        $email = $request->input('call-email');
+
         Mail::send(
             new CallOrder(
-               'n.dragunov@energouchet.kz'
+                $email,
+                $phone,
+                $name
             )
         );
+
+        Mail::send(
+            new CallOrder(
+               'n.dragunov@energouchet.kz',
+               $phone,
+               $name
+            )
+        );
+
+        return view('landing-page');
     }
 
     public function index()
