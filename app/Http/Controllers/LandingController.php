@@ -16,6 +16,13 @@ class LandingController extends Controller
      */
     public function call(Request $request)
     {
+
+        $this->validate($request, [
+            'call-name' => 'required',
+            'call-phone' => 'required',
+            'call-email' => 'required|email'
+        ]);
+
         $name = $request->input('call-name');
         $phone= $request->input('call-phone');
         $email = $request->input('call-email');
@@ -35,8 +42,7 @@ class LandingController extends Controller
                $name
             )
         );
-
-        return view('landing-page');
+        return redirect('/');
     }
 
     public function index()
