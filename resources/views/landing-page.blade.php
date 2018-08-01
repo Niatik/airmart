@@ -185,7 +185,7 @@
                 АРОМАТЕРАПИИ
             </h3>
             <form class="subscription-form">
-                <input class="subscription-email" type="email" placeholder="Введите ваш e-mail">
+                <input class="subscription-email" type="email" placeholder="Введите ваш e-mail" autocomplete="off">
                 <input class="subscription-button" type="submit" value="Подписаться">
             </form>
 
@@ -244,9 +244,9 @@
     <div class="call-form-text">и получите бесплатную<br />консультацию</div>
     <form role="form" method="post" action="call">
         <input type="hidden" name="_token" value="{{ app('session')->token() }}">
-        <input name="call-name" class="call-form-name" type="text" placeholder="Введите ваше имя">
-        <input name="call-phone" class="call-form-phone" type="text" placeholder="Ваш телефон">
-        <input name="call-email" class="call-form-email" type="email" placeholder="Ваш e-mail">
+        <input name="call-name" class="call-form-name" type="text" placeholder="Введите ваше имя" autocomplete="off">
+        <input name="call-phone" class="call-form-phone" type="text" placeholder="Ваш телефон" autocomplete="off">
+        <input name="call-email" class="call-form-email" type="email" placeholder="Ваш e-mail" autocomplete="off">
         <button class="call-form-button" type="submit">Оставить заявку</button>
     </form>
 </div>
