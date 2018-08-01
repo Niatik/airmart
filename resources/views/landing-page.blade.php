@@ -239,7 +239,7 @@
     </footer>
 </div>
 
-<div class="call-form">
+<div class="call-form" id="call-form">
     <h4 class="call-form-header">ОСТАВЬТЕ ЗАЯВКУ</h4>
     <div class="call-form-text">и получите бесплатную<br />консультацию</div>
     <form role="form" method="post" action="call">
@@ -249,7 +249,13 @@
         <input name="call-email" class="call-form-email" type="email" placeholder="Ваш e-mail" autocomplete="off">
         <button class="call-form-button" type="submit">Оставить заявку</button>
     </form>
+    <span class="close" onclick="hideForm()"></span>
 </div>
+<script>
+    function hideForm() {
+        document.getElementById('call-form').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>
