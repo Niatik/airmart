@@ -264,7 +264,7 @@ body {
 
 .subscription-email {
     background: white url('../img/letter.png') 10px 5px no-repeat;
-    height: 30px;
+    height: 32px;
     padding-left: 50px;
     font-style: italic;
     border-radius: 20px;
@@ -356,14 +356,25 @@ footer:before {
 }
 
 .call-form-name, .call-form-phone, .call-form-email {
-    background: white url('../img/letter.png') 10px 8px no-repeat;
-    height: 40px;
+    height: 45px;
     line-height: 40px;
     margin-top: 15px;
     padding-left: 50px;
     border-radius: 20px;
     font-size: 0.7rem;
     width: 200px;
+}
+
+.call-form-name {
+    background: white url('../img/client-symbol.png') 10px 5px no-repeat!important;
+}
+
+.call-form-phone {
+    background: white url('../img/phone-symbol.png') 10px 4px no-repeat!important;
+}
+
+.call-form-email {
+    background: white url('../img/letter.png') 10px 10px no-repeat!important;
 }
 
 .call-form-button {
@@ -376,6 +387,6 @@ footer:before {
     border-radius: 20px;
     box-shadow: -5px -3px 5px rgba(0,0,0,0.5);
     background-color:#fefefe ;
-    background: linear-gradient(to top, #9CDDFB, #fefefe);
+    background: linear-gradient(to top, #9CDDFB 30%, #fefefe 70%);
 }
 
