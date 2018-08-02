@@ -342,6 +342,7 @@ footer:before {
     position: fixed;
     top: 40%;
     left: 80%;
+    width: 250px;
     background-color: #9CDDFB;
     color: #2B2A29;
     text-align: center;
