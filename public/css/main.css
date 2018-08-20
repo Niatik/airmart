@@ -341,7 +341,7 @@ footer:before {
 .call-form {
     position: fixed;
     top: 40%;
-    left: 80%;
+    right: 5px;
     width: 250px;
     background-color: #9CDDFB;
     color: #2B2A29;
